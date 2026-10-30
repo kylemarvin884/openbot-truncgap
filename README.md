@@ -43,8 +43,11 @@ MCP server 自己的 `slice(0, 8000)`、以及上下文压缩器。砍完之后�
 需要 Node >= 22，没有其他依赖。
 
 ```bash
-git clone <your-fork-url> && cd truncgap
-node src/cli.mjs scan ~/.claude/projects/<project>/<session>.jsonl
+git clone https://github.com/kylemarvin884/openbot-truncgap
+cd openbot-truncgap
+
+node src/cli.mjs scan demo/session-lossy.jsonl        # 先跑通 demo
+node src/cli.mjs scan ~/.claude/projects/<p>/<s>.jsonl  # 再换成你自己的会话
 ```
 
 或者本地 link 成命令：
