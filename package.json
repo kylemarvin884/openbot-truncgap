@@ -1,0 +1,32 @@
+{
+  "name": "openbot-truncgap",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "Audit how much of your coding agent's tool output never reached the model, and what it concluded anyway.",
+  "keywords": [
+    "agent",
+    "cli",
+    "transcript",
+    "context",
+    "truncation"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "truncgap": "src/cli.mjs"
+  },
+  "files": [
+    "src",
+    "demo",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node src/cli.mjs help",
+    "demo": "node demo/demo.mjs",
+    "test": "node --test"
+  },
+  "license": "MIT"
+}
